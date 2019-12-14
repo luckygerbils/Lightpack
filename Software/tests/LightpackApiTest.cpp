@@ -58,7 +58,7 @@ void LightpackApiTest::initTestCase()
     m_socket = NULL;
 
     // Start Api Server in separate thread for access by QTcpSocket-s
-    m_apiServer = new ApiServer(3636);
+    m_apiServer = new ApiServer(3637);
     m_interfaceApi = new LightpackPluginInterface();
     m_apiServer->setInterface(m_interfaceApi);
     m_apiServerThread = new QThread();
@@ -91,7 +91,7 @@ void LightpackApiTest::init()
         m_socket = new QTcpSocket();
 
     // Reconnect to host before each test case
-    m_socket->connectToHost("127.0.0.1", 3636);
+    m_socket->connectToHost("127.0.0.1", 3637);
 
     // Wait 5 second for connected
     QVERIFY(m_socket->waitForConnected(5000));

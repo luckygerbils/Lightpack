@@ -36,15 +36,9 @@ SOURCES += \
     SettingsWindowMockup.cpp \
     main.cpp \
     GrabCalculationTest.cpp \
-    lightpackmathtest.cpp \
-    HooksTest.cpp \
-    ../hooks/ProxyFuncJmp.cpp \
-    ../hooks/hooksutils.cpp \
-    ../hooks/ProxyFuncVFTable.cpp \
-    ../hooks/Logger.cpp
+    lightpackmathtest.cpp
 
 HEADERS += \
-    ../src/grab/calculations.hpp \
     ../common/defs.h \
     ../src/enums.hpp \
     ../src/ApiServerSetColorTask.hpp \
@@ -57,10 +51,4 @@ HEADERS += \
     GrabCalculationTest.hpp \
     LightpackApiTest.hpp \
     lightpackmathtest.hpp \
-    ../math/include/PrismatikMath.hpp \
-    HooksTest.h \
-    ../hooks/ProxyFuncJmp.hpp \
-    ../hooks/ProxyFunc.hpp \
-    ../hooks/hooksutils.h \
-    ../hooks/ProxyFuncVFTable.hpp \
-    ../hooks/Logger.hpp
+    ../math/include/PrismatikMath.hpp

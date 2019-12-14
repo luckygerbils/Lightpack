@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
     QList<QObject *> tests;
     QStringList summary;
 
-    tests.append(new GrabCalculationTest());
-    tests.append(new HooksTest());
-    tests.append(new LightpackMathTest());
+//    tests.append(new GrabCalculationTest());
+//    tests.append(new HooksTest());
+//    tests.append(new LightpackMathTest());
     tests.append(new LightpackApiTest());
 
 
